@@ -119,7 +119,7 @@ public class ArrayListJList
            public void actionPerformed(ActionEvent e) {
         	   int input = Integer.parseInt(field1.getText());
         	   if (field1.getText().length() >= 2 ) {
-        		   area.append("Fullscreen to see arrayList" + '\n');
+        		   area.append("Fullscreen to see ArrayList" + '\n');
 	        	   area.append("Your number: " + input + '\n');
 	               area.append("Your prime: " + findThePrime(input) + '\n');
 	               area.append("Your ArrayList: " + '\n');

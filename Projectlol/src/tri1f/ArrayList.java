@@ -29,7 +29,7 @@ public class ArrayList
 	       java.util.ArrayList<Integer> primes = new java.util.ArrayList<Integer>(); 
 	       //Use a do-while loop to add primes into this ArrayList until we reach the prime that starts with the digits "input"
 	       do {
-	           if (primeChecker(i)) {
+	           if (primeChecker(i) && i > 1) {
 	    		   primes.add(i);
 	    		   i++;
 	    	   } else {
@@ -50,7 +50,7 @@ public class ArrayList
 	       java.util.ArrayList<Integer> primes = new java.util.ArrayList<Integer>(); 
 	       //Use a do-while loop to add primes into this ArrayList until we reach the prime that starts with the digits "input"
 	       do {
-	           if (primeChecker(i)) {
+	           if (primeChecker(i) && i > 1) {
 	    		   primes.add(i);
 	    		   i++;
 	    	   } else {
@@ -118,7 +118,7 @@ public class ArrayList
            public void actionPerformed(ActionEvent e) {
         	   int input = Integer.parseInt(field1.getText());
         	   if (field1.getText().length() >= 2 ) {
-        		   area.append("Some elements in arrayList might get cut off of TextArea");
+        		   area.append("Some elements in ArrayList might get cut off of TextArea" + '\n');
 	        	   area.append("Your number: " + input + '\n');
 	               area.append("Your prime: " + findThePrime(input) + '\n');
 	               area.append("Your ArrayList: " + '\n');
