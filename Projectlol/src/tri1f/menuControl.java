@@ -153,8 +153,22 @@ public class menuControl extends JFrame {
 				arrayListJList.add();
 			}
 		});
+		
 		mnSprint.add(mntmArrayListJList);
+		
+		JMenu mnAPTest = new JMenu("APTest");
+		mnAPTest.setBackground(Color.WHITE);
+		menuBar.add(mnAPTest);
+		JMenuItem mntmAPrun = new JMenuItem("Run APTest");
+		mntmAPrun.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				APTest apTest = new APTest();
+				apTest.run();
+			}
+		});
+		mnAPTest.add(mntmAPrun);
 	}
+	
 	
 	
 	
